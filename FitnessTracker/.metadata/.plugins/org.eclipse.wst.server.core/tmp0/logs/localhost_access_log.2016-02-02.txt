@@ -1,0 +1,5 @@
+127.0.0.1 - - [02/Feb/2016:13:36:07 -0500] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [02/Feb/2016:13:46:36 -0500] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [02/Feb/2016:13:46:36 -0500] "GET /FitnessTracker/WEB-INF/jsp/hello.jsp HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [02/Feb/2016:13:46:42 -0500] "GET /FitnessTracker/WEB-INF/jsp/hello. HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [02/Feb/2016:13:46:47 -0500] "GET /FitnessTracker/WEB-INF/jsp/hello HTTP/1.1" 404 992

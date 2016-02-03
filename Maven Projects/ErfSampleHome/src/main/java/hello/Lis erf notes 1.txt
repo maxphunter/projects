@@ -1,0 +1,23 @@
+CVS or SVN???
+
+Build process?
+	1. maven
+	2. Jenkins
+	3. Artifactory or nexus: repo for storing jar files.
+
+Draw out layers...
+
+Intro High level on ERF functionality...
+1. current architecture in pictures
+2. proposed architecture in diagram
+	a. reasons why its better
+3. Goals section/statement
+4. Estimate
+5. Staffing
+6. Timeline
+
+
+break powerpoint out into a word document.
+
+
+What's a CI??
