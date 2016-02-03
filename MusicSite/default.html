@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <title>Title</title>
+    <style>
+
+        .container {
+            width: 100%;
+        }
+
+        .body-content {
+            margin-left: 14em;
+            margin-top: 0.5em;
+            width: 85%;
+            transition: margin-left 0.2s linear;
+            -moz-transition: margin-left 0.2s linear;
+            -webkit-transition: margin-left 0.2s linear;
+
+        }
+
+        header {
+            padding: 0.7em;
+            background-color: gray;
+            color: white;
+            font-size: larger;
+        }
+
+        header a {
+            background-color: gray;
+            color: white;
+            text-decoration: none;
+        }
+
+        header a:hover {
+            text-decoration: none;
+        }
+
+        .pdsa-sn-wrapper {
+            position: absolute;
+            top: 3.6em;
+            left: 0em;
+            width: 13em;
+            height: 100%;
+            background-color: #003F7E;
+            transition: left 0.2s linear;
+            -moz-transition: left 0.2s linear;
+            -webkit-transition: left 0.2s linear;
+
+        }
+
+        .pdsa-sn-wrapper ul {
+            width: 11em;
+            list-style: none;
+            margin-top: 2em;
+            margin-left: 1em;
+            padding: 0em;
+        }
+
+        .pdsa-sn-wrapper ul li {
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+
+        }
+
+        .pdsa-sn-wrapper ul li a {
+            color: #999999;
+            text-decoration: none;
+            padding: 0.5em;
+        }
+
+        .pdsa-sn-wrapper ul li a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .pdsa-sn-wrapper ul li a:active,
+        .pdsa-sn-wrapper ul li a:focus {
+            text-decoration: none;
+            outline: none;
+            color: red;
+        }
+
+        .pdsa-sn-wrapper ul .pdsa-sn-brand {
+            maring-left: -.5em;
+            font-size: large;
+            color: white;
+        }
+
+        .pdsa-sn-wrapper ul .pdsa-sn-brand a {
+            color: white;
+        }
+
+        .pdsa-sn-wrapper ul .pdsa-sn-brand a:hover {
+            color: lightblue;
+            background: none;
+        }
+
+        .pdsa-sn-wrapper ul li a span {
+            margin-top: -1em;
+            margin-bottom: -1em;
+            margin-left: 1em;
+            margin-top: -1em;
+            padding-top: -1em;
+            padding-bottom: -1em;
+        }
+
+        .pdsa-sn-wrapper ul li ul {
+            list-style: none;
+            margin-top: 1em;
+            margin-left: 1em;
+            font-size: small;
+        }
+
+        @media all and (max-width: 768px) {
+            .pdsa-sn-wrapper {
+                left: -10em;
+            }
+
+            .pdsa-sn-wrapper ul li a i {
+                padding-left: 7.5em;
+                margin-top: -1em;
+                margin-bottom: -1em;
+            }
+
+            .body-content {
+                margin-left: 5em;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <header>
+            <a href="default.html">My Tunes</a>
+        </header>
+    </div>
+    <div class="row">
+        <nav id="sideNavParent" class="pdsa-sn-wrapper">
+            <ul>
+                <li class="pdsa-sn-brand">
+                    <a href="default.html"
+                       class="visible-sm visible-md visible-lg">Music</a>
+                </li>
+                <li class="pdsa-sn-brand">
+                    <a href="default.html">
+                        <span class="visible-sm visible-md visible-lg">Home</span>
+                        <i class="glyphicon glyphicon-home visible-xs"></i>
+                    </a>
+                </li>
+                <li class="pdsa-sn-brand">
+                    <a href="#"
+                       data-toggle="collapse"
+                       data-target="#ulGenres">
+                        <span class="visible-sm visible-md visible-lg">Genres&nbsp; <b class="caret"></b></span>
+                        <i class="glyphicon glyphicon-globe visible-xs"></i>
+                    </a>
+                    <div class="visible-sm visible-md visible-lg">
+                        <ul id="ulGenres" class="collapse" data-parent="#sideNavParent">
+                            <li>
+                                <a href="#">All Genres</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Jazz</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Country</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Rock</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="pdsa-sn-brand"
+                    data-toggle="collapse"
+                    data-target="#ulPlaylists">
+                    <a href="#">
+                        <span class="visible-sm visible-md visible-lg">Playlists&nbsp; <b class="caret"></b></span>
+                        <i class="glyphicon glyphicon-list-alt visible-xs"></i>
+                    </a>
+                    <div class="visible-sm visible-md visible-lg">
+                        <ul id="ulPlaylists" class="collapse" data-parent="#sideNavParent">
+                            <li>
+                                <a href="#">All Playlists</a>
+                            </li>
+
+                            <li>
+                                <a href="#">My Top Rated</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Top Country</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Top Classic Rock</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="pdsa-sn-brand">
+                    <a href="default.html">
+                        <span class="visible-sm visible-md visible-lg">Songs</span>
+                        <i class="glyphicon glyphicon-music visible-xs"></i>
+                    </a>
+                </li>
+                <li class="pdsa-sn-brand">
+                    <a href="default.html">
+                        <span class="visible-sm visible-md visible-lg">Downloads</span>
+                        <i class="glyphicon glyphicon-download visible-xs"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="container body-content">
+            <div class="row">
+                <div class="col-xs-10 col-lg-12">
+                    <h1>My Music</h1>
+                    <p>Cake bear claw chocolate bar. Icing sweet roll lemon drops tootsie roll cake dragée. Jujubes cake
+                        sweet oat cake toffee sweet roll marshmallow candy canes gingerbread. Biscuit pastry toffee
+                        marzipan
+                        cake candy canes fruitcake danish chupa chups. Jelly beans gummies cookie icing sweet. Macaroon
+                        gummies marshmallow sugar plum sweet roll. Jelly-o jelly-o cake powder macaroon. Dessert sesame
+                        snaps tiramisu carrot cake topping tiramisu croissant.
+
+                        Dragée tart cheesecake toffee topping. Marshmallow gummi bears bonbon cupcake. Tart cheesecake
+                        biscuit croissant halvah powder sesame snaps sweet roll. Gingerbread lollipop danish danish.
+                        Candy
+                        canes gummi bears soufflé marzipan marzipan dragée bonbon. Wafer dessert chocolate cake. Bear
+                        claw
+                        marzipan candy.
+
+                        Lollipop candy canes danish gummi bears tiramisu. Bonbon gummies chupa chups bonbon biscuit
+                        donut
+                        candy canes. Pudding tootsie roll chocolate cake cake caramels lemon drops bear claw croissant
+                        biscuit. Chocolate cake jelly caramels. Sweet muffin donut sweet tootsie roll pastry. Cupcake
+                        chocolate bar cake halvah. Tart tart caramels. Soufflé muffin icing cake jelly beans. Ice cream
+                        sugar plum topping candy.
+
+                        Cake muffin croissant chocolate chocolate bar danish. Marshmallow chocolate cake cookie
+                        croissant.
+                        Bear claw topping chocolate pie. Cotton candy jelly powder sweet roll bonbon macaroon sweet.
+                        Lemon
+                        drops wafer sweet danish cake ice cream chocolate bonbon. Danish danish pudding muffin apple
+                        pie.
+                        Toffee sugar plum pastry chocolate bar croissant chupa chups jelly beans cookie bear claw.
+                        Cupcake
+                        gingerbread ice cream ice cream cupcake marzipan chocolate cake danish. Sweet roll jelly gummi
+                        bears. Wafer tootsie roll chocolate cupcake.
+
+                        Jelly-o tiramisu wafer powder gummi bears pastry. Bonbon liquorice pastry sesame snaps tiramisu
+                        tart
+                        lollipop. Chocolate gingerbread chupa chups. Bear claw powder dessert marzipan. Jelly beans
+                        liquorice bear claw chocolate muffin. Brownie pudding cake fruitcake cookie. Lollipop liquorice
+                        dragée jelly-o macaroon cake chocolate bar gummies. Sugar plum muffin biscuit cake cookie
+                        topping
+                        oat cake chupa chups.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
