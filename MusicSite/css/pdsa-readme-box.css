@@ -1,10 +1,10 @@
 
 .pdsa-readme-box-primary {
-      border-color: #428bca;
+      border-color: #ffac01;
   }
 
 .pdsa-readme-box-primary .readme-header {
-    background-color: #428bca;
+    background-color: #ffac01;
 }
 
 .pdsa-readme-box-primary .readme-footer a {
@@ -13,11 +13,11 @@
 
 
 .pdsa-readme-box-success {
-    border-color: #3c763d;
+    border-color: #B1EB00;
 }
 
 .pdsa-readme-box-success .readme-header {
-    background-color: green;
+    background-color: #B1EB00;
 }
 
 .pdsa-readme-box-success .readme-footer a {
@@ -26,11 +26,11 @@
 
 
 .pdsa-readme-box-info {
-    border-color: #31708f;
+    border-color: #FF598F;
 }
 
 .pdsa-readme-box-info .readme-header {
-    background-color: #31708f;
+    background-color: #FF598F;
 }
 
 .pdsa-readme-box-iinfo .readme-footer a {

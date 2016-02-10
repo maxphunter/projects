@@ -108,109 +108,55 @@
             <div class="text-center col-xs-12">
                 <h3>Display the following genres...</h3>
                 <div class="well well-sm">
-                    <div class="btn-group" data-toggle="buttons">
+                    <div class="btn-group" data-toggle="buttons" id="songSelect">
 
                         <label class="btn btn-default">
                             <span class="glyphicon glyphicon-unchecked"></span>
-                            <input type="checkbox" checked="checked"/>Jazz
+                            <input type="radio" checked="checked"/>All Songs
                         </label>
 
                         <label class="btn btn-default">
                             <span class="glyphicon glyphicon-unchecked"></span>
-                            <input type="checkbox"/>Country
+                            <input type="radio"/>Selected
                         </label>
 
                         <label class="btn btn-default">
                             <span class="glyphicon glyphicon-unchecked"></span>
-                            <input type="checkbox"/>Rock
+                            <input type="radio"/>Unselected
                         </label>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-5">
-                <div class="pdsa-readme-box pdsa-readme-box-primary">
-                    <div class="readme-header">
-                        <i class="glyphicon glyphicon-music"></i>
-                    </div>
-                    <div class="readme-body">
-                        <h1>Jazz</h1>
-                        <p>Jazz is a genre of music that originated in the late nineteenth and early twentieth
-                            century</p>
-                    </div>
-                    <div class="readme-footer">
-                        <a href="Jazz.html">See all Jazz Songs</a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-xs-12 col-sm-5">
-                <div class="pdsa-readme-box pdsa-readme-box-success">
-                    <div class="readme-header">
-                        <i class="glyphicon glyphicon-music"></i>
-                    </div>
-                    <div class="readme-body">
-                        <h1>Country</h1>
-                        <p>Country music is popular american music...</p>
-                    </div>
-                    <div class="readme-footer">
-                        <a href="Country.html">See all Country Songs</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-5">
-                <div class="pdsa-readme-box pdsa-readme-box-info">
-                    <div class="readme-header">
-                        <i class="glyphicon glyphicon-music"></i>
-                    </div>
-                    <div class="readme-body">
-                        <h1>Rock</h1>
-                        <p>Rock music is a popular genre that is sometimes called RocknRoll.</p>
-                    </div>
-                    <div class="readme-footer">
-                        <a href="Country.html">See all Country Songs</a>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="row">
-
-        </div>
     </div>
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pdsa-common.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("[type='checkbox']").on('change', function () {
 
-</div>
-<script src="js/jquery-2.2.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/pdsa-common.js"></script>
-<script>
-    $(document).ready(function(){
-        $("[type='checkbox']").on('change', function(){
+                if ($(this).prop('checked')) {
+                    $(this).prev()
+                            .removeClass('glyphicon-unchecked')
+                            .addClass('glyphicon-ok-circle');
+                }
+                else {
+                    $(this).prev()
+                            .removeClass('glyphicon-ok-circle')
+                            .addClass('glyphicon-unchecked');
+                }
+            });
 
-            if ($(this).prop('checked')){
-                $(this).prev()
-                        .removeClass('glyphicon-unchecked')
-                        .addClass('glyphicon-ok-circle');
-            }
-            else{
-                $(this).prev()
-                        .removeClass('glyphicon-ok-circle')
-                        .addClass('glyphicon-unchecked');
-            }
+            $("input:checked").prev()
+                    .removeClass('glyphicon-unchecked')
+                    .addClass('glyphicon-ok-circle');
+
+            $("input:checked").parent()
+                    .addClass('active');
         });
-
-        $("input:checked").prev()
-                .removeClass('glyphicon-unchecked')
-                .addClass('glyphicon-ok-circle');
-
-        $("input:checked").parent()
-                .addClass('active');
-    });
-</script>
+    </script>
 
 </body>
 </html>

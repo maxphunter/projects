@@ -4,7 +4,6 @@
     margin: 0.3em;
     padding: 1em;
     min-height: 15em;
-
 }
 
 .pdsa-summary-block .summary-background i,
@@ -57,12 +56,12 @@
 
 /*Themes of summary blocks*/
 .pdsa-summary-block-primary{
-    background-color: #428bca;
-    color: #fff;
+    background-color: #ffac01;
+    color: white;
 }
 
 .pdsa-summary-block-primary .summary-footer{
-  background-color: deepskyblue;
+  background-color: #aa7301;
 }
 
 .pdsa-summary-block-primary .summary-footer a{
@@ -72,12 +71,12 @@
 
 
 .pdsa-summary-block-success{
-    background-color: #3bca3f;
+    background-color: #B1EB00;
     color: #fff;
 }
 
 .pdsa-summary-block-success .summary-footer{
-    background-color: #25ff4d;
+    background-color: #82ac00;
 }
 
 .pdsa-summary-block-success .summary-footer a{
@@ -87,12 +86,12 @@
 
 
 .pdsa-summary-block-info{
-    background-color: #9b0907;
+    background-color: #FF598F;
     color: #fff;
 }
 
 .pdsa-summary-block-info .summary-footer{
-    background-color: rgba(255, 28, 11, 0.53);
+    background-color: #9e3858;
 }
 
 .pdsa-summary-block-info .summary-footer a{
@@ -101,12 +100,12 @@
 
 
 .pdsa-summary-block-danger{
-    background-color: #ff0eef;
+    background-color: #913CCD;
     color: #fff;
 }
 
 .pdsa-summary-block-danger .summary-footer{
-    background-color: rgba(255, 0, 214, 0.53);
+    background-color: #7330a3;
 }
 
 .pdsa-summary-block-danger .summary-footer a{

@@ -1,9 +1,11 @@
 
 .pdsa-sn-wrapper {
+    background: radial-gradient(circle at bottom left, #eeeeee, #01DDDD);
+    color: #f4d894;
     position: absolute;
     top: 3.6em;
     left: 0em;
-    width: 13em;
+    width: 10em;
     height: 100%;
     background-color: #003F7E;
     transition: left 0.2s linear;
@@ -18,6 +20,7 @@
     margin-top: 2em;
     margin-left: 1em;
     padding: 0em;
+
 }
 
 .pdsa-sn-wrapper ul li {
@@ -77,17 +80,17 @@
 
 @media all and (max-width: 768px) {
     .pdsa-sn-wrapper {
-        left: -10em;
+        left: -7em;
     }
 
     .pdsa-sn-wrapper ul li a i {
-        padding-left: 7.5em;
+        padding-left: 5.25em;
         margin-top: -1em;
         margin-bottom: -1em;
     }
 
     .body-content {
-        margin-left: 5em;
+        margin-left: 3em;
     }
 }
 
