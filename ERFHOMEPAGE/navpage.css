@@ -1,0 +1,94 @@
+#ohio-seal{
+    width:9em;
+    height:9em;
+    padding: 1em;
+}
+
+#logout{
+    color: white;
+    float:right;
+    padding-top: 3.75em;
+    padding-right: 2em;
+    text-decoration:none;
+}
+
+#logout:hover{
+    color:red;
+    cursor: pointer;
+}
+.header-top{
+    background: #006400 ; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#006400, #004300); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#006400, #004300); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#006400, #004300); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#006400, #004300); /* Standard syntax */
+    padding-left:15vw;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.header-top h3{
+    padding-left:.25em;
+    padding-top:.75em;
+}
+
+.header-top h3:hover{
+    color: #e4e4e4;
+    cursor: pointer;
+}
+
+#help-column {
+    background-color: white;
+    padding: 1em;
+    font-family: 'Roboto Slab', serif;
+}
+
+#button-column {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding:1em;
+
+}
+
+#navigation-buttons{
+    font-family: 'Roboto Slab', serif;
+    border-radius:2px;
+    margin:.5em;
+    background-color: dimgray;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    color: white;
+    box-shadow: 1px 1px 5px #dfdfdf;
+}
+
+#navigation-buttons:hover{
+    background-color: #006400;
+    color: white;
+    cursor: pointer;
+}
+
+#navigation-buttons:active{
+
+}
+
+#erf-footer{
+    background: #006400 ; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#006400, #004300); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#006400, #004300); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#006400, #004300); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#006400, #004300); /* Standard syntax */
+    height: 8em;
+}
+
+#dark-green-line{
+    background-color: #002d00;
+    height: 10px;
+}
+
+#light-gray-line{
+    background-color: #afafaf;
+    height: 1px;
+}
