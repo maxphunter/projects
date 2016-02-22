@@ -1,0 +1,111 @@
+@CHARSET "UTF-8";
+
+.btn-success {
+	border: #006400;
+	background: #004300; /* For browsers that do not support gradients */
+}
+
+.btn-success:hover {
+	border: #006400;
+	background: #004300; /* For browsers that do not support gradients */
+}
+
+.btn-success:active {
+	border: #006400;
+	background: #004300; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#004300, #006400);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#004300, #006400);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#004300, #006400);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(#004300, #006400); /* Standard syntax */
+	border: #006400;
+}
+
+h2 {
+	color: #004300;
+}
+
+#title {
+	padding-bottom: .25em;
+	color: white;
+}
+
+.top-login {
+	background: #004300; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#006400, #004300);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#006400, #004300);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#006400, #004300);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(#006400, #004300); /* Standard syntax */
+	margin: .15em;
+	border-radius: 3px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+img {
+	width: 6em;
+	padding-top: .5em;
+}
+
+body {
+	background-color: #eee;
+	background-size: 100% background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: 'Roboto Slab';
+}
+
+#banner {
+	width: 380px
+}
+
+.wrapper {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.form-signin {
+	max-width: 380px;
+	padding: 2em;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius:10px;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+ 	.form-signin-heading{
+	margin-bottom:.5em;
+} 
+
+.form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	@
+	include
+	box-sizing(border-box);
+}
+
+.focus {
+	z-index: 2;
+}
+
+input[type="text"] {
+	margin-bottom: 1em;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+input[type="password"] {
+	margin-bottom: 20px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+} 
+

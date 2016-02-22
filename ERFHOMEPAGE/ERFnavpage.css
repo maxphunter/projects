@@ -110,17 +110,81 @@ hr {
     margin: -50px auto 10px;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
-a:hover{
-    text-decoration:none;
+
+a:hover {
+    text-decoration: none;
     color: white;
 }
 
-#footer-text{
+#footer-text {
     color: rgba(255, 255, 255, 0.52);
-    padding:.5em;
+    padding: .5em;
 }
+
+.navbar-header {
+    padding-left: 1em;
+}
+
+.glyphicon-ok {
+    color: #00db00;
+}
+
+#package-open a {
+    color: blue;
+    text-decoration: none;
+    float: left;
+}
+
+#package-info-body {
+    padding: 1em;
+}
+
+#package-row {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border: none;
+    border-radius: 0px;
+}
+
+.panel {
+    border-color: #d9d9d9;
+    border-top: none;
+    border-radius: 0 !important;
+}
+
+.panel-heading{
+    padding-top: 1.5em;
+
+}
+
+.panel-group{
+    border-radius: 0px;
+}
+
+.panel-default{
+    margin-bottom:1em;
+}
+
+#packages-table-title{
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:1em;
+    border-color: #d9d9d9;
+    background-color: #858585;
+}
+
+#packages-table-title div{
+    text-decoration: underline;
+}
+
+#package-body-container{
+    margin-bottom: 5em;
+}
+
+
+
 

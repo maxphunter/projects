@@ -59,11 +59,7 @@
     font-family: 'Roboto Slab', serif;
     border-radius: 2px;
     margin: .5em;
-    background: #008200; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#008200, #004300); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#008200, #004300); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#008200, #004300); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#008200, #004300); /* Standard syntax */
+    background-color: dimgray;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     color: white;
@@ -86,7 +82,7 @@
     background: -o-linear-gradient(#006400, #004300); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#006400, #004300); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#006400, #004300); /* Standard syntax */
-    height: 8em;
+    height: 10em;
 }
 
 #dark-green-line {

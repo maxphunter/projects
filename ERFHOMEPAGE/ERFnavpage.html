@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+
+    <link type="text/css" rel="stylesheet" href="ERFnavpage.css">
+
+</head>
+<body>
+<div class="header-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-xs-10 col-sm-10" id="title">
+                <div class="row">
+                    <div style="float:left;padding-left:1em;">
+                        <img id="ohio-seal" src="Seal_of_Ohio.svg"/>
+                    </div>
+                    <div class="col-sm-4"><a href="navpage.html">
+                        <h3>Electronic<br>Rule Filing</h3></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-1 col-sm-1 " id="header-info">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="light-gray-line"></div>
+<div id="dark-green-line">
+</div>
+
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header"
+        ">
+        <a class="navbar-brand" href="#">MENU</a>
+    </div>
+    <ul class="nav navbar-nav" style="float:right;">
+        <li class="menu-options"><a href="#">Codified Rules</a></li>
+        <li class="menu-options"><a href="#">CSI</a></li>
+        <li class="menu-options"><a href="#">Help</a></li>
+        <li class="menu-options"><a href="#">Logout</a></li>
+    </ul>
+    </div>
+</nav>
+
+
+<div class="container" id="package-body-container">
+    <div id="packages-table-title">
+        <div class="row">
+            <div class="col-xs-1">
+
+            </div>
+            <div class="col-xs-1" id="package-status">
+                Status</i>
+            </div>
+            <div class="col-xs-1" id="package-id">
+                <p>Package Number</p>
+            </div>
+            <div class="col-xs-3" id="package-name">
+                <p>Name</p>
+            </div>
+            <div class="col-xs-1" id="package-type">
+                <p>Type</p>
+            </div>
+            <div class="col-xs-3" id="package-last-modified">
+                <p>Last Modified</p>
+            </div>
+            <div class="col-xs-1" id="package-number-of-rules">
+                <p># of Rules</p>
+            </div>
+            <div class="col-xs-1" id="package-open">
+                <a href="#">Open</a>
+            </div>
+        </div>
+    </div>
+    <div class="panel-group" id="package-row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" href="#collapse1">
+                                <i class="glyphicon glyphicon-chevron-down"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-xs-1" id="package-status">
+                        <i class="glyphicon glyphicon-ok"></i>
+                    </div>
+                    <div class="col-xs-1" id="package-id">
+                        <p>123345</p>
+                    </div>
+                    <div class="col-xs-3" id="package-name">
+                        <p>Test Package 1</p>
+                    </div>
+                    <div class="col-xs-1" id="package-type">
+                        <p>EM</p>
+                    </div>
+                    <div class="col-xs-3" id="package-last-modified">
+                        <p>Feb. 22nd, 2005</p>
+                    </div>
+                    <div class="col-xs-1" id="package-number-of-rules">
+                        <p>6</p>
+                    </div>
+                    <div class="col-xs-1" id="package-open">
+                        <a href="#">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row " id="package-info-body">
+                        <div class="col-xs-4 text-center">Package Number: 223212</div>
+                        <div class="col-xs-4 text-center">Package Type: Emergency</div>
+                        <div class="col-xs-4 text-center">Promulgated Under: 119.03</div>
+                    </div>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                        <tr>
+                            <th>Rule #</th>
+                            <th>Rule Filing State</th>
+                            <th>Preparedness</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>432142</td>
+                            <td>Executive Order Request - Pending</td>
+                            <td><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td>123412</td>
+                            <td>Refile - Pending</td>
+                            <td><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>435321</td>
+                            <td>Original File - Filed</td>
+                            <td><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="panel-group" id="package-row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" href="#collapse2"><i
+                                    class="glyphicon glyphicon-chevron-down"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-xs-1" id="package-status">
+                        <i class="glyphicon glyphicon-ok"></i>
+                    </div>
+                    <div class="col-xs-1" id="package-id">
+                        <p>123345</p>
+                    </div>
+                    <div class="col-xs-3" id="package-name">
+                        <p>Test Package 1</p>
+                    </div>
+                    <div class="col-xs-1" id="package-type">
+                        <p>EM</p>
+                    </div>
+                    <div class="col-xs-3" id="package-last-modified">
+                        <p>Feb. 22nd, 2005</p>
+                    </div>
+                    <div class="col-xs-1" id="package-number-of-rules">
+                        <p>6</p>
+                    </div>
+                    <div class="col-xs-1" id="package-open">
+                        <a href="#">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row " id="package-info-body">
+                        <div class="col-xs-4 text-center">Package Number: 223212</div>
+                        <div class="col-xs-4 text-center">Package Type: Emergency</div>
+                        <div class="col-xs-4 text-center">Promulgated Under: 119.03</div>
+                    </div>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                        <tr>
+                            <th>Rule #</th>
+                            <th>Rule Filing State</th>
+                            <th>Preparedness</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>432142</td>
+                            <td>Executive Order Request - Pending</td>
+                            <td><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td>123412</td>
+                            <td>Refile - Pending</td>
+                            <td><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>435321</td>
+                            <td>Original File - Filed</td>
+                            <td><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="panel-group" id="package-row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" href="#collapse3"><i
+                                    class="glyphicon glyphicon-chevron-down"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-xs-1" id="package-status">
+                        <i class="glyphicon glyphicon-ok"></i>
+                    </div>
+                    <div class="col-xs-1" id="package-id">
+                        <p>123345</p>
+                    </div>
+                    <div class="col-xs-3" id="package-name">
+                        <p>Test Package 1</p>
+                    </div>
+                    <div class="col-xs-1" id="package-type">
+                        <p>EM</p>
+                    </div>
+                    <div class="col-xs-3" id="package-last-modified">
+                        <p>Feb. 22nd, 2005</p>
+                    </div>
+                    <div class="col-xs-1" id="package-number-of-rules">
+                        <p>6</p>
+                    </div>
+                    <div class="col-xs-1" id="package-open">
+                        <a href="#">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row " id="package-info-body">
+                        <div class="col-xs-4 text-center">Package Number: 223212</div>
+                        <div class="col-xs-4 text-center">Package Type: Emergency</div>
+                        <div class="col-xs-4 text-center">Promulgated Under: 119.03</div>
+                    </div>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                        <tr>
+                            <th>Rule #</th>
+                            <th>Rule Filing State</th>
+                            <th>Preparedness</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>432142</td>
+                            <td>Executive Order Request - Pending</td>
+                            <td><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td>123412</td>
+                            <td>Refile - Pending</td>
+                            <td><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>435321</td>
+                            <td>Original File - Filed</td>
+                            <td><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="panel-group" id="package-row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" href="#collapse4"><i
+                                    class="glyphicon glyphicon-chevron-down"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-xs-1" id="package-status">
+                        <i class="glyphicon glyphicon-ok"></i>
+                    </div>
+                    <div class="col-xs-1" id="package-id">
+                        <p>123345</p>
+                    </div>
+                    <div class="col-xs-3" id="package-name">
+                        <p>Test Package 1</p>
+                    </div>
+                    <div class="col-xs-1" id="package-type">
+                        <p>EM</p>
+                    </div>
+                    <div class="col-xs-3" id="package-last-modified">
+                        <p>Feb. 22nd, 2005</p>
+                    </div>
+                    <div class="col-xs-1" id="package-number-of-rules">
+                        <p>6</p>
+                    </div>
+                    <div class="col-xs-1" id="package-open">
+                        <a href="#">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row " id="package-info-body">
+                        <div class="col-xs-4 text-center">Package Number: 223212</div>
+                        <div class="col-xs-4 text-center">Package Type: Emergency</div>
+                        <div class="col-xs-4 text-center">Promulgated Under: 119.03</div>
+                    </div>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                        <tr>
+                            <th>Rule #</th>
+                            <th>Rule Filing State</th>
+                            <th>Preparedness</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>432142</td>
+                            <td>Executive Order Request - Pending</td>
+                            <td><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td>123412</td>
+                            <td>Refile - Pending</td>
+                            <td><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        <tr>
+                            <td>435321</td>
+                            <td>Original File - Filed</td>
+                            <td><i class="glyphicon glyphicon-ok"></i></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+<div id="dark-green-line"></div>
+<div id="light-gray-line"></div>
+<div id="erf-footer">
+    <p class="text-center" id="footer-text">
+        Filers Website | Notices And Disclaimers | Contact Information <br>
+        © 2016 Legislative Service Commission. All Rights Reserved. <br>
+        A Publication of the Ohio Legislative Service Commission
+    </p>
+</div>
+
+
+</body>
+</html>

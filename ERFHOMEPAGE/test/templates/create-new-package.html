@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="UTF-8"></meta>
+<title>Create New package</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	th:href="@{http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css}"></link>
+
+<!-- jQuery library -->
+<script
+	th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js}"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	th:src="@{http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js}"></script>
+<link
+	th:href="@{https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100}"
+	rel='stylesheet' type='text/css'></link>
+
+<link type="text/css" rel="stylesheet" th:href="@{/css/create-new-package.css}"></link>
+<link type="text/css" rel="stylesheet" th:href="@{/css/navpage.css}"></link>
+
+</head>
+<body>
+	<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-xs-10 col-sm-10" id="title">
+					<div class="row">
+						<div style="float: left; padding-left: 1em;">
+							<img id="ohio-seal" th:src="@{/images/Seal_of_Ohio.svg}" />
+						</div>
+						<div class="col-sm-4">
+							<a href="navpage.html">
+								<h3>
+									Electronic<br></br>Rule Filing
+								</h3>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-1 col-sm-1 " id="header-info">
+					<a id="logout" href="login.html">Logout</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div id="light-gray-line"></div>
+	<div id="dark-green-line"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2"></div>
+			<div class="wrapper col-sm-8 col-xs-12">
+				<form class="form-signin" path="HomeNavigation.html">
+					<div class="col-sm-12">
+						<h2 class="form-signin-heading">Agency:</h2>
+						<p>7 - Mike's agency</p>
+					</div>
+
+					<div class="form-group">
+						<label for="sel1">Division:</label> <select class="form-control"
+							id="sel1">
+							<option>Test Division</option>
+							<option>Marcy's Test Division</option>
+							<option>Test Agency/Division</option>
+							<option>MIKE'S TEST DIVISION</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="usr">Enter Package Name:</label> <input type="text"
+							class="form-control" id="usr" />
+					</div>
+
+
+					<div class="form-group">
+						<label for="sel1">Prescribe Statute:</label> <select
+							class="form-control" id="sel1">
+							<option>119.03</option>
+							<option>111.15</option>
+							<option>117.20</option>
+							<option>5703.14</option>
+							<option>Other</option>
+						</select>
+					</div>
+
+					<div>
+						<h3>Choose Package Type:</h3>
+						<div class="radio">
+							<label><input type="radio" name="optradio" />Typical
+								(Original Filing of New, Amended or Rescinded rules)</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio" />No Change /
+								FYR</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio" />Emergency</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio" />University/Community
+								College</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio" />Internal
+								Management</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio" />State Fire
+								Marshal</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio" />Special, not
+								Subject to Legislative Review</label>
+						</div>
+					</div>
+
+					<button class="btn btn-lg btn-success" type="submit">Create</button>
+
+				</form>
+
+			</div>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+
+	<div id="dark-green-line"></div>
+	<div id="light-gray-line"></div>
+	<div id="erf-footer">
+		<p class="text-center" id="footer-text">
+			Filers Website | Notices And Disclaimers | Contact Information <br />
+			© 2016 Legislative Service Commission. All Rights Reserved. <br /> A
+			Publication of the Ohio Legislative Service Commission
+		</p>
+	</div>
+
+
+</body>
+</html>

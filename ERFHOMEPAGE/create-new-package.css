@@ -1,0 +1,42 @@
+@CHARSET "ISO-8859-1";
+
+.wrapper {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-color: white;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-radius: 2px;
+}
+
+body {
+	/* background: #eee !important; */
+	background-color: #eee;
+	background-size:100%;
+	oubackground-repeat: no-repeat;
+	background-attachment: fixed;
+     background-position: center;
+	font-family:'Roboto Slab';
+}
+
+.btn-success {
+	border: #006400;
+	background: #004300; /* For browsers that do not support gradients */
+}
+
+.btn-success:hover {
+	border: #006400;
+	background: #006300; /* For browsers that do not support gradients */
+}
+
+.btn-success:active {
+	border: #006400;
+	background: #004300; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#004300, #006400); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#004300, #006400); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#004300, #006400); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#004300, #006400); /* Standard syntax */
+	border: #006400;
+}

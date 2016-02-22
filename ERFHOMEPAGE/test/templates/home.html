@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>ERF Home Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	th:href="@{http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css}"></link>
+
+<!-- jQuery library -->
+<script
+	th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js}"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	th:src="@{http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js}"></script>
+<link
+	th:href='@{https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100}'
+	rel='stylesheet' type='text/css'></link>
+
+<link href="/css/navpage.css" rel='stylesheet' type='text/css'
+	th:href="@{/css/navpage.css}"></link>
+
+</head>
+<body>
+	<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-xs-10 col-sm-10" id="title">
+					<div class="row">
+						<div style="float: left; padding-left: 1em;">
+							<img id="ohio-seal" src="/images/Seal_of_Ohio.svg"
+								th:src="@{/images/Seal_of_Ohio.svg}" />
+						</div>
+						<div class="col-sm-4">
+							<a href="navpage.html">
+								<h3>
+									Electronic<br></br>Rule Filing
+								</h3>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-1 col-sm-1 " id="header-info">
+					<a id="logout" th:href="@{login.html}">Logout</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div id="light-gray-line"></div>
+	<div id="dark-green-line"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-xs-12 col-sm-4 col-md-3" id="button-column">
+				<a th:href="@{/CreateNewPackage/}">
+					<div id="navigation-buttons">Create a New package</div>
+				</a>
+				<div id="navigation-buttons">
+					<a>View Packages in Progress</a>
+				</div>
+				<div id="navigation-buttons">
+					<a>Manage CSI Documents</a>
+				</div>
+				<div id="navigation-buttons">
+					<a>Help!</a>
+				</div>
+				<div id="navigation-buttons">
+					<a>Request And Obtain Codified Rules</a>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-8" id="help-column">
+				<h4>Recommended Software Versions</h4>
+				<p>Adobe Acrobat Reader version 6.0 and Internet Explorer 7.0 or
+					higher are recommended for use with the ERF Website.</p>
+				<hr />
+				<h4>RAS3 AVAILABLE FOR DOWNLOAD</h4>
+				<p>RAS3 is now available to state agencies as a replacement to
+					the Microsoft Word-based RAS 2.0 currently in use. Please visit
+					http://ras.lis.state.oh.us to download RAS3 and supporting
+					documentation. If you have any questions or concerns, please
+					contact the ERF Help Desk at 614-387-2078.</p>
+				<hr />
+				<h4>PDF Documents</h4>
+				<p>The ERF System is not compatible with certain versions of PDF
+					documents. If an incompatible PDF is uploaded, the ERF System will,
+					upon upload, convert the PDF to a compatible version. IT IS THE
+					FILER’S RESPONSIBILITY TO CAREFULLY EXAMINE THE PDF WHEN
+					PRINT/VIEWING THE DOCUMENT PRIOR TO FILING TO VERIFY THAT THE
+					DOCUMENT IS RENDERED AS EXPECTED.</p>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+	</div>
+
+	<div id="dark-green-line"></div>
+	<div id="light-gray-line"></div>
+	<div id="erf-footer">
+		<p class="text-center" id="footer-text">
+			Filers Website | Notices And Disclaimers | Contact Information <br />
+			@ 2016 Legislative Service Commission. All Rights Reserved. <br /> A
+			Publication of the Ohio Legislative Service Commission
+		</p>
+	</div>
+</body>
+</html>
